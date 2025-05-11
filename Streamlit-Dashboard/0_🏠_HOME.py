@@ -1,5 +1,21 @@
 import streamlit as st
 
+import streamlit as st
+from utils.auth import check_auth, show_login_page, sign_out
+
+if not check_auth():
+    show_login_page()
+    st.stop()  # This prevents the rest of the app from running
+
+# Only shown if authenticated
+st.title("🎉 Welcome to StudAi")
+st.success(f"Welcome, {st.session_state.user.email}! 👋")
+
+if st.button("Logout"):
+    sign_out()
+
+# Your main app content here...
+
 st.set_page_config(
     page_title="Hello",
     page_icon="👋",

@@ -2,6 +2,13 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from groq import Groq
+from utils.auth import check_auth, show_login_page
+
+if not check_auth():
+    show_login_page()
+    st.stop()  # Prevent access to the feature
+    
+# Rest of your feature page code...
 
 # Load environment variables from the .env file
 load_dotenv()

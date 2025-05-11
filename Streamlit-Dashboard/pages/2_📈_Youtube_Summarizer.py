@@ -4,6 +4,14 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import NoTranscriptFound
 import os
 import google.generativeai as genai
+from utils.auth import check_auth, show_login_page
+
+if not check_auth():
+    show_login_page()
+    st.stop()  # Prevent access to the feature
+    
+# Rest of your feature page code...
+
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))

@@ -11,6 +11,13 @@ from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
 from io import BytesIO
+from utils.auth import check_auth, show_login_page
+
+if not check_auth():
+    show_login_page()
+    st.stop()  # Prevent access to the feature
+    
+# Rest of your feature page code...
 
 st.set_page_config(page_title="Chat With One or More PDFs")
 
