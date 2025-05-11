@@ -1,5 +1,6 @@
 # For YT_summarizer
 altair==5.5.0
+Groq
 annotated-types==0.7.0
 attrs==25.3.0
 blinker==1.9.0
@@ -51,6 +52,7 @@ rsa==4.9.1
 six==1.17.0
 smmap==5.0.2
 streamlit==1.45.0
+streamlit-lottie
 tenacity==9.1.2
 toml==0.10.2
 tornado==6.4.2
@@ -62,3 +64,8 @@ uritemplate==4.1.1
 urllib3==2.4.0
 watchdog==6.0.0
 youtube-transcript-api==1.0.3
+pandas
+numpy
+ast
+requests
+beautifulsoup4
