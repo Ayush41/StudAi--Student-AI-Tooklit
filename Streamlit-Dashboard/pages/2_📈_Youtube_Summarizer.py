@@ -61,3 +61,9 @@ if st.button("Get Detailed Notes"):
             st.error("No transcripts available for this video.")
     except Exception as e:
         st.error(f"Error: {str(e)}")
+
+# Footer with light gray color
+st.markdown(
+    "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
+    unsafe_allow_html=True
+)

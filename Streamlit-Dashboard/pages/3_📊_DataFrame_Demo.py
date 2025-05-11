@@ -54,3 +54,9 @@ except URLError as e:
     """
         % e.reason
     )
+
+    # Footer with light gray color
+st.markdown(
+    "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
+    unsafe_allow_html=True
+)

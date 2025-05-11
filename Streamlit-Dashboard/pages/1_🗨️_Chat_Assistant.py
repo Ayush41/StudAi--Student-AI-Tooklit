@@ -58,7 +58,11 @@ if user_input:
     st.session_state.chat_history.append({"user": user_input, "assistant": response})
     st.session_state.chat_history = st.session_state.chat_history[-10:]
 
-
+# Footer with light gray color
+st.markdown(
+    "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
+    unsafe_allow_html=True
+)
 
 
 
