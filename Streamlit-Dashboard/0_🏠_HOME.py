@@ -7,14 +7,14 @@ st.set_page_config(
     page_icon="👋",
 )
 
-# Check authentication before showing any content
-if not check_auth():
-    show_login_page()
-    st.stop()  # This prevents the rest of the app from running
+# # Check authentication before showing any content
+# if not check_auth():
+#     show_login_page()
+#     st.stop()  # This prevents the rest of the app from running
 
 # Only shown if authenticated
-st.title("🎉 Welcome to StudAi")
-st.success(f"Welcome, {st.session_state.user.email}! 👋")
+# st.title("🎉 Welcome to StudAi")
+# st.success(f"Welcome, {st.session_state.user.email}! 👋")
 
 if st.button("Logout"):
     sign_out()
@@ -47,14 +47,79 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Show image (using raw string for Windows path)
-st.image(r"F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_column_width=True)
+# Show image with corrected parameter
+st.image(r"F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_container_width=True)
 
 # Footer with light gray color
 st.markdown(
     "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
     unsafe_allow_html=True
 )
+
+
+
+
+
+
+
+
+# import streamlit as st
+# from utils.auth import check_auth, show_login_page, sign_out
+
+# # Set page config first (must be first Streamlit command)
+# st.set_page_config(
+#     page_title="Hello",
+#     page_icon="👋",
+# )
+
+# # Check authentication before showing any content
+# if not check_auth():
+#     show_login_page()
+#     st.stop()  # This prevents the rest of the app from running
+
+# # Only shown if authenticated
+# # st.title("🎉 Welcome to StudAi")
+# st.success(f"Welcome, {st.session_state.user.email}! 👋")
+
+# if st.button("Logout"):
+#     sign_out()
+
+# # Your existing home page content
+# st.markdown(
+#     """
+#     <style>
+#     .stApp {
+#         background-color: white;
+#         color: black;
+#     }
+#     h1, p {
+#         color: black;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+# st.sidebar.success("Select a demo above.")
+
+# st.markdown(
+#     """
+#     <div style="text-align:center">
+#         <h1>WELCOME TO STUD-AI</h1>
+#         <p style="font-size:20px;">An AI powered Student AI Toolkit for college Students & Researchers.</p>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+# # Show image (using raw string for Windows path)
+# st.image(r"F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_column_width=True)
+
+# # Footer with light gray color
+# st.markdown(
+#     "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
+#     unsafe_allow_html=True
+# )
 
 
 
