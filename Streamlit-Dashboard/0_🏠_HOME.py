@@ -5,28 +5,106 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to Streamlit! 👋")
+# Set white background and black text
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: white;
+        color: black;
+    }
+    h1, p {
+        color: black;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.sidebar.success("Select a demo above.")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
+    <div style="text-align:center">
+        <h1>WELCOME TO STUD-AI</h1>
+        <p style="font-size:20px;">An AI powered Student AI Toolkit for college Students & Researchers.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
+# Show image
+# st.image("F:/Student-AI-toolkit/Streamlit-Dashboard/student.jpg", use_container_width=True)
+st.image("F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_container_width=True)
+
+# Footer with light gray color
+st.markdown(
+    "<p style='text-align: center; color: #A9A9A9;'>- ©️Stud-AI Project 2025 -</p>",
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
+
+
+# import streamlit as st
+
+# st.set_page_config(
+#     page_title="Hello",
+#     page_icon="👋",
+# )
+
+# st.sidebar.success("Select a demo above.")
+
+# st.markdown(
+#     """
+#     <div style="text-align:center">
+#         <h1>WELCOME TO STUD-AI</h1>
+#         <p style="font-size:20px;">An AI powered Student AI Toolkit for college Students & Researchers.</p>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+# # Display an image or GIF with updated parameter
+# st.image("F:/Student-AI-toolkit/Streamlit-Dashboard/student.jpg", use_container_width=True)
+
+# st.markdown("<p style='text-align: center; color: #D3D3D3;'>- ©️Stud-AI Project 2025 -</p>", unsafe_allow_html=True)
+
+
+
+
+
+
+
+# import streamlit as st
+
+# st.set_page_config(
+#     page_title="Hello",
+#     page_icon="👋",
+# )
+
+# # st.write("# Welcome to Stud-AI! 👋")
+
+# st.sidebar.success("Select a demo above.")
+
+# st.markdown(
+#     """
+#     <div style="text-align:center">
+#         <h1>WELCOME TO STUD-AI</h1>
+#         <p style="font-size:20px;">An AI powered Student AI Toolkit for college Students & Researchers.</p>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+# # Display an image or GIF
+# st.image("F:\Student-AI-toolkit\Streamlit-Dashboard\student.jpg", use_column_width=True)
+
+# st.markdown("<p style='text-align: center; color: #D3D3D3;'>- ©️Stud-AI Project 2025 -</p>", unsafe_allow_html=True)
 
 
 # import streamlit as st
