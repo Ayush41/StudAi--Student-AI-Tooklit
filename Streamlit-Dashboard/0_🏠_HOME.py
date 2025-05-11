@@ -8,16 +8,13 @@ st.set_page_config(
 )
 
 # # Check authentication before showing any content
-# if not check_auth():
-#     show_login_page()
-#     st.stop()  # This prevents the rest of the app from running
+if not check_auth():
+    show_login_page()
+    st.stop()  # This prevents the rest of the app from running
 
 # Only shown if authenticated
 # st.title("🎉 Welcome to StudAi")
 # st.success(f"Welcome, {st.session_state.user.email}! 👋")
-
-if st.button("Logout"):
-    sign_out()
 
 # Your existing home page content
 st.markdown(
@@ -48,7 +45,10 @@ st.markdown(
 )
 
 # Show image with corrected parameter
-st.image(r"F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_container_width=True)
+st.image("F:\Student-AI-toolkit\Streamlit-Dashboard\studai-Home.gif", use_container_width=True)
+
+if st.button("Logout"):
+    sign_out()
 
 # Footer with light gray color
 st.markdown(

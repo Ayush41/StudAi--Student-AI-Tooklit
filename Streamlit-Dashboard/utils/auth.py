@@ -4,8 +4,10 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-supabase_url = os.getenv("SUPABASE_URL")
-supabase_key = os.getenv("SUPABASE_KEY")
+# supabase_url = os.getenv("SUPABASE_URL")
+# supabase_key = os.getenv("SUPABASE_KEY")
+supabase_url = st.secrets.SUPABASE_URL
+supabase_key = st.secrets.SUPABASE_KEY
 supabase: Client = create_client(supabase_url, supabase_key)
 
 def check_auth():
