@@ -1,8 +1,10 @@
 # For YT_summarizer
 altair==5.5.0
 Groq
+supabase
 annotated-types==0.7.0
 attrs==25.3.0
+os 
 blinker==1.9.0
 cachetools==5.5.2
 certifi==2025.4.26
