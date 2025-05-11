@@ -22,15 +22,15 @@
 - Unified access to all tools
 
 ### 🧠 AI-Powered Assistants
-| Feature | Description | Tech Used |
-|---------|-------------|-----------|
-| **Chat Assistant** | Context-aware conversations with document memory | Gemini + LangChain |
-| **YouTube Summarizer** | 5-second summaries with key takeaways | Whisper + Llama3 |
-| **Notes Chat** | Q&A from uploaded lecture notes | RAG + Supabase Vector |
-| **Contest Tracker** | Real-time coding challenge updates | n8n + LeetCode API |
-| **AI Interviewer** | Mock interviews with voice interaction | Groq + ElevenLabs |
-| **ATS Resume Reader** | Resume scoring & optimization tips | spaCy + GPT-4 |
-| **Research Deep Dive** | Academic paper analysis & summarization | ArXiv API + Claude 3 |
+| Feature | Description 
+|---------|-------------
+| **Chat Assistant** | Context-aware conversations with document memory | 
+| **YouTube Summarizer** | 5-second summaries with key takeaways 
+| **Notes Chat** | Q&A from uploaded lecture notes
+| **Contest Tracker** | Real-time coding challenge updates 
+| **AI Interviewer** | Mock interviews with voice interaction
+| **ATS Resume Reader** | Resume scoring & optimization tips
+| **Research Deep Dive** | Academic paper analysis & summarization 
 
 ## 🛠 Tech Stack
 
