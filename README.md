@@ -37,5 +37,10 @@
 # DEMO
 ![image](https://github.com/user-attachments/assets/8d01503a-a93a-4c37-9576-d6cd0b8b804f)
 
+# Features
+![image](https://github.com/user-attachments/assets/f5dcd80b-2a73-4d52-83c2-c8a1658aceeb)
+
+
 ## Supabase Auth
 ![image](https://github.com/user-attachments/assets/c7931df0-797e-4ff7-aea4-2ca42dc56377)
+
