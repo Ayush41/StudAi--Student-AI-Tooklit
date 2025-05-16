@@ -28,7 +28,32 @@ def display_chat():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
+def handle_logout():
+    st.session_state.auth = None
+    st.session_state.session_id = None
+    st.session_state.messages = []
+    st.rerun()
 
+def auth_ui():
+    tab1, tab2 = st.tabs(["Login", "Sign Up"])
+    
+    with tab1:
+        email = st.text_input("Email", key="login_email")
+        password = st.text_input("Password", type="password", key="login_password")
+        if st.button("Login"):
+            auth = login(email, password)
+            if auth:
+                st.session_state.auth = auth
+                st.session_state.session_id = generate_session_id()
+                st.rerun()
+
+    with tab2:
+        email = st.text_input("Email", key="signup_email")
+        password = st.text_input("Password", type="password", key="signup_password")
+        if st.button("Sign Up"):
+            auth = signup(email, password)
+            if auth:
+                st.success("Sign up successful! Please log in.")
 
 
 def main():
